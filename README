@@ -1,0 +1,15 @@
+The idea of this module is to introduce additional ordering fields to speed up hieratical data retrieval.
+
+See
+
+http://iamcam.wordpress.com/2006/03/24/storing-hierarchical-data-in-a-database-part-2a-modified-preorder-tree-traversal
+http://articles.sitepoint.com/article/hierarchical-data-database
+
+TODO:
+ * Re-Ordering nodes
+ * Adding nodes
+ 
+ * Live vs Stage + roll back etc?
+ 
+ * Handle the cases where a node should not be visible, and the children should not be visible.
+		-This could be done by running a second query that excludes the range of values between the parent's LHS and RHS.
