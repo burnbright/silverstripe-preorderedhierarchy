@@ -1,13 +1,12 @@
-The idea of this module is to introduce additional ordering fields to speed up hieratical data retrieval.
+The idea of this module is to introduce additional ordering fields to speed up hierarchical data retrieval.
 
 See
-
 http://iamcam.wordpress.com/2006/03/24/storing-hierarchical-data-in-a-database-part-2a-modified-preorder-tree-traversal
 http://articles.sitepoint.com/article/hierarchical-data-database
 
 TODO:
  * Adding nodes: add 2 to each LHS and RHS where LHS or RHS is greater than the RHS where you are adding the node.
- * Re-Ordering nodes: add X to LHS and RHS for all greater nodes, where X is the total number of nodes being shifted.
+ * Re-Ordering nodes: add X to LHS and RHS for all greater nodes, where X is the total number of nodes being shifted (+2?). Might need to run a 'cleanup' also that removes gaps?
  
  * Live vs Stage + roll back etc? not sure what to do here.
  
